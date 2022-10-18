@@ -1,0 +1,19 @@
+Source: ruby-open4
+Section: ruby
+Priority: optional
+Maintainer: Debian Ruby Extras Maintainers <pkg-ruby-extras-maintainers@lists.alioth.debian.org>
+Uploaders: Paul van Tilburg <paulvt@debian.org>
+Build-Depends: debhelper (>= 7.0.50~), gem2deb (>= 0.3.0~)
+Standards-Version: 3.9.5
+Vcs-Git: git://anonscm.debian.org/pkg-ruby-extras/ruby-open4.git
+Vcs-Browser: http://anonscm.debian.org/gitweb?p=pkg-ruby-extras/ruby-open4.git;a=summary
+Homepage: https://github.com/ahoward/open4
+XS-Ruby-Versions: all
+
+Package: ruby-open4
+Architecture: all
+XB-Ruby-Versions: ${ruby:Versions}
+Depends: ${misc:Depends}, ruby | ruby-interpreter
+Description: library for managing child processes in Ruby
+ Open4 lets you open child process with handles on pid, stdin, stdout, and
+ stderr: manage child processes and their I/O handles easily.
